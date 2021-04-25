@@ -40,7 +40,7 @@ public class User {
 	
 	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JsonIgnore
-	@JsonBackReference(value = "user-sale")
+	@JsonBackReference(value = "user-sale") // comentario user
 	private List<Sale> saleLst;
 
 }
